@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  color: hsl(192, 100%, 9%);
+}
+
+h1 h2 {
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  background-image: url("./images/bg-hero-desktop.svg");
+  background-size: cover;
+  background-position: center center;
+  background-color: hsl(193, 100%, 96%);
+  padding: 40px 0;
+}
+
+.header-img {
+  width: 80%;
+  margin-left: 20%;
+}
+
+.container {
+  width: 1000px;
+  max-width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  justify-content: space-between;
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+nav.flex {
+  flex-direction: row;
+}
+
+.btn {
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  padding: 15px 60px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: hsl(322, 100%, 66%);
+  color: #fff;
+}
+
+.flex > div,
+.flex > ul {
+  flex: 1;
+}
+
+.box {
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  margin: 40px 0;
+  padding: 60px;
+  background-color: #fff;
+}
+
+.box img {
+  width: 80%;
+}
+
+.small-box {
+  display: inline-block;
+  margin-bottom: -50%;
+  z-index: 1;
+}
+
+footer {
+  background-color: hsl(192, 100%, 9%);
+  color: #fff;
+  padding: 180px 0 60px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  margin-bottom: 25px;
+}
+
+.distribute {
+  align-items: flex-start;
+}
+
+li.icono {
+  margin-right: 25px;
+}
+
+footer .circle {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+footer p {
+  text-align: right;
+}
+
+.logo-white {
+  width: 200px;
+}
+
+li {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+  }
+
+  body {
+    text-align: center;
+  }
+
+  .box-reverse-mobile {
+    flex-direction: column-reverse;
+  }
+
+  .hero-mobile {
+    margin-top: 40px;
+  }
+
+  footer .container {
+    text-align: left;
+  }
+
+  .logo-white {
+    margin-left: 30px;
+    margin-bottom: 20px;
+  }
+
+  footer .social-links {
+    flex-direction: row;
+    transform: translateX(100%);
+  }
+
+  footer p {
+    text-align: center;
+  }
+
+  .logo {
+    margin-right: 40px;
+  }
+}
